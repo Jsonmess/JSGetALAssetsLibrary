@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSGroupListCell">
+            <connections>
+                <outlet property="GroupName" destination="Snj-gC-Ozj" id="nR7-N0-I6M"/>
+                <outlet property="GroupPhotoNumber" destination="NsC-7t-g7Z" id="Ioo-zI-MhW"/>
+                <outlet property="PosterImageView" destination="O6p-UU-M52" id="zUu-GW-U9o"/>
+                <outlet property="contentview" destination="SyH-dW-H7Z" id="o3K-lo-ZXh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SyH-dW-H7Z">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-2N-KXM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="组名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snj-gC-Ozj">
+                    <rect key="frame" x="76" y="7" width="180" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="照片数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsC-7t-g7Z">
+                    <rect key="frame" x="83" y="31" width="59" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="uRi-yV-5B1"/>
+                        <constraint firstAttribute="width" constant="59" id="z9G-kR-OiO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6p-UU-M52">
+                    <rect key="frame" x="10" y="4" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.004531967657" blue="0.078242603229999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="QKK-aj-wta"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settingforward_pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="XCm-eE-M59">
+                    <rect key="frame" x="275" y="14" width="30" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Yjk-dv-KJw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XCm-eE-M59" firstAttribute="bottom" secondItem="NsC-7t-g7Z" secondAttribute="bottom" id="44h-Ln-fUO"/>
+                <constraint firstItem="NsC-7t-g7Z" firstAttribute="leading" secondItem="O6p-UU-M52" secondAttribute="trailing" constant="23" id="DFU-eW-Nx6"/>
+                <constraint firstItem="Snj-gC-Ozj" firstAttribute="leading" secondItem="O6p-UU-M52" secondAttribute="trailing" constant="16" id="Fx0-Hi-Bny"/>
+                <constraint firstItem="O6p-UU-M52" firstAttribute="top" secondItem="SyH-dW-H7Z" secondAttribute="top" constant="4" id="GVs-vx-mc0"/>
+                <constraint firstAttribute="bottom" secondItem="gAf-2N-KXM" secondAttribute="bottom" id="GrD-nR-3GF"/>
+                <constraint firstItem="XCm-eE-M59" firstAttribute="top" secondItem="SyH-dW-H7Z" secondAttribute="top" constant="14" id="JoD-19-0xP"/>
+                <constraint firstAttribute="trailing" secondItem="XCm-eE-M59" secondAttribute="trailing" constant="15" id="Sbh-pt-3es"/>
+                <constraint firstItem="NsC-7t-g7Z" firstAttribute="top" secondItem="Snj-gC-Ozj" secondAttribute="bottom" id="g7P-iT-tp1"/>
+                <constraint firstItem="gAf-2N-KXM" firstAttribute="leading" secondItem="SyH-dW-H7Z" secondAttribute="leading" id="gaK-Xk-GLw"/>
+                <constraint firstItem="Snj-gC-Ozj" firstAttribute="top" secondItem="SyH-dW-H7Z" secondAttribute="top" constant="7" id="guh-D4-Ebw"/>
+                <constraint firstItem="XCm-eE-M59" firstAttribute="leading" secondItem="Snj-gC-Ozj" secondAttribute="trailing" constant="19" id="maq-nF-iRg"/>
+                <constraint firstItem="gAf-2N-KXM" firstAttribute="centerY" secondItem="XCm-eE-M59" secondAttribute="centerY" id="rfI-Fo-php"/>
+                <constraint firstItem="O6p-UU-M52" firstAttribute="leading" secondItem="SyH-dW-H7Z" secondAttribute="leading" constant="10" id="rvu-HP-yhY"/>
+                <constraint firstItem="gAf-2N-KXM" firstAttribute="top" secondItem="SyH-dW-H7Z" secondAttribute="top" id="tMo-na-Af4"/>
+                <constraint firstAttribute="bottom" secondItem="O6p-UU-M52" secondAttribute="bottom" constant="6" id="wW8-mi-19M"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Settingforward_pressed.png" width="30" height="30"/>
+        <image name="cell_bg.png" width="320" height="51"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
